@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@300;400;700;900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/321f1cb627.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="./styles.css" type="text/css" />
+
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="weather-app-wrapper">
+      <div class="weather-app">
+
+
+        <form class="search-form" id="search-form">
+          <div class="form-item">
+            <div class="form-input">
+              <input type="search" placeholder="Enter a city" class="form-control" id="city-input" autocomplete="off" />
+            </div>
+            <div class="form-submit">
+              <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+          </div>
+        </form>
+
+
+        <div class="overview">
+          <h1 id="city"></h1>
+          <ul>
+            <li><span id="date"></span></li>
+            <li id="description"></li>
+          </ul>
+        </div>
+
+
+        <div class="row">
+
+          <div class="col-6">
+            <div class="weather-temperature">
+              <img src="#" alt="Mostly Cloudy" id="icon" />
+              <strong id="temperature"></strong>
+              <span class="units">
+                <a href="#" id="celsius-link" class="active">°C</a> |
+                <a href="#" id="fahrenheit-link" class="active">°F</a></span>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <ul>
+              <li>Humidity <span id="humidity"></span>%</li>
+              <li>Wind <span id="wind"></span>km/h</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <small>
+        <a href="https://nataliiadiachenko.github.io/week7/" target="_blank">Open-source code</a>
+        by Nataliia Diachenko
+      </small>
+    </div>
+  </div>
+  <script src="./src/index.js"></script>
+</body>
+
+</html>

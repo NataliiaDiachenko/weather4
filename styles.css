@@ -1,0 +1,136 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.weather-app-wrapper {
+  max-width: 380px;
+  max-height: 720px;
+  margin: 30px auto;
+}
+
+.weather-app {
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  padding: 20px;
+  height: 710px;
+  background: linear-gradient(to top, rgba(0 0 0 / 0.5), rgba(0 0 0 / 0)),
+    url(./images/pexels.jpg);
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: center;
+}
+
+h1 {
+  color: #878787;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 28px;
+  margin-bottom: 0;
+  /* display: block;
+  text-align: right; */
+}
+
+/* .card-weather {
+  border: 1px solid #dee2e6;
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 570px;
+  background: linear-gradient(to top, rgba(0 0 0 / 0.5), rgba(0 0 0 / 0)),
+    url(./images/unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 140%;
+  background-position: center top 0px;
+} */
+
+li {
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.overview {
+  margin-bottom: 20px;
+}
+
+.weather-temperature img {
+  margin-right: 5px;
+  height: 44px;
+  width: 44px;
+}
+
+.weather-temperature strong {
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+}
+
+.weather-temperature .active {
+  color: #000000;
+  text-decoration: none;
+}
+
+.form-item {
+  display: flex;
+  gap: 6px;
+}
+
+.search-form {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  font-size: 12px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border-width: 1px;
+  border-color: #dee2e6;
+  /*  
+  width: 75%; */
+}
+
+.form-control:hover,
+.form-control:focus,
+.form-control:active {
+  border-color: #f96d00;
+}
+
+.btn-primary {
+  background: #f96d00;
+  border: #f96d00;
+  color: white;
+  font-size: 12px;
+  padding: 11px 15px;
+  border: 1px #f96d00;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  /* width: 25%; */
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #f96c00b8;
+  color: white;
+  font-size: 12px;
+}
